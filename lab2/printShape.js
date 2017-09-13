@@ -2,6 +2,7 @@
 exports.triangle = function(numberOfLines) {
 	
 	if (numberOfLines <= 0 || typeof numberOfLines != 'number') {
+		console.log('Invalid input. You must a number greater than or equal to 1.');
 		return;
 	}
 
@@ -23,6 +24,7 @@ exports.triangle = function(numberOfLines) {
 exports.square = function(numberOfLines) {
 
 	if (numberOfLines <= 1 || typeof numberOfLines != 'number') {
+		console.log('Invalid input. You must a number greater than or equal to 2.');
 		return;
 	}
 
@@ -41,7 +43,7 @@ exports.square = function(numberOfLines) {
 exports.rhombus = function(numberOfLines) {
 
 	if (numberOfLines <= 1 || typeof numberOfLines != 'number' || numberOfLines % 2 != 0) {
-		console.log('Invalid input. You must provide an even number.')
+		console.log('Invalid input. You must provide an even number.');
 		return;
 	}
 
